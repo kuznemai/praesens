@@ -36,8 +36,8 @@ import BurgerMenu from "~~/components/BurgerMenu.vue";
     <perelinks></perelinks>
     <search-bar></search-bar>
     <tiles></tiles>
-    <Footer class="footer" />
   </div>
+  <Footer class="footer" />
 </template>
 
 <style scoped>
