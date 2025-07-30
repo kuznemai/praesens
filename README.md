@@ -1,75 +1,40 @@
-# Nuxt Minimal Starter
+# 🌐 Praesens
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Информационный портал для врачей, организаторов здравоохранения и медицинских специалистов, реализованный с использованием Nuxt 3 и Vue 3.
 
-## Setup
+## 🚀 Технологии
 
-Make sure to install dependencies:
+- [Nuxt 3](https://nuxt.com/) — SSR/SSG-фреймворк на основе Vue
+- [Vue 3 + `<script setup>`](https://vuejs.org/) — современный синтаксис компонентов
+- TypeScript — типизация компонентов
+- Компонентный подход
+- REST API с мок-сервером ([Mokky.dev](https://mokky.dev))
+
+## 📁 Структура проекта
+## 🧩 Основные компоненты
+
+- `EventCard.vue` — карточка события с заголовком и датой, переход на `/events/:id`
+- `BurgerMenu.vue` — бургер-меню с навигацией и формой подписки
+- `Tiles.vue` — плитки мероприятий
+- `Perelinks.vue` — блок дополнительных ссылок
+- `SearchBar.vue` — строка поиска
+- `Header.vue`, `Footer.vue` — шапка и подвал сайта
+
+## 🌍 Маршруты
+
+- `/` — главная страница с событиями
+- `/events/[id]` — динамическая страница события по ID
+- другие страницы автоматически создаются из папки `pages/`
+
+## 📦 Установка
 
 ```bash
-# npm
+# 1. Клонируй репозиторий
+git clone https://github.com/kuznemai/praesens.git
+cd praesens
+
+# 2. Установи зависимости
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# 3. Запусти проект в режиме разработки
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
