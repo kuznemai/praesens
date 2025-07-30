@@ -27,12 +27,12 @@ defineProps<{
 }
 
 .event-card:hover {
-  background-color: #e8e8e8; /* Gray background on hover */
+  background-color: #e8e8e8;
 }
 
 .event-title {
-  text-decoration: none; /* Remove default underline from link */
-  display: block; /* Ensure the link takes full width for hover */
+  text-decoration: none;
+  display: block;
 }
 
 .event-title-text {
@@ -45,6 +45,6 @@ defineProps<{
 .event-description {
   font-size: 1rem;
   color: #666;
-  margin: 0; /* Remove default margin for cleaner spacing */
+  margin: 0;
 }
 </style>

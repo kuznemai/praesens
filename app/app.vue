@@ -6,10 +6,12 @@ import Index from "~~/pages/index.vue";
     <index></index>
   </div>
 </template>
-<style scoped>
+<style>
 *{
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+body{
   margin: 0;
   padding: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 </style>
