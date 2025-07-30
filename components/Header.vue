@@ -56,17 +56,17 @@
 /* Адаптивность */
 @media (max-width: 768px) {
   .site-header {
-    grid-template-columns: 1fr; /* Одна колонка на мобильных */
-    min-height: auto; /* Адаптивная высота */
+    grid-template-columns: 1fr;
+    min-height: auto;
   }
 
   .site-header__logo__container {
-    grid-column: 1 / 2; /* Логотип занимает всю ширину */
+    grid-column: 1 / 2;
   }
 
   .site-header__banner {
-    grid-column: 1 / 2; /* Баннер занимает всю ширину */
-    height: 200px; /* Фиксированная высота на мобильных */
+    grid-column: 1 / 2;
+    height: 200px;
   }
 }
 </style>

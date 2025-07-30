@@ -5,10 +5,12 @@ import EventCard from '../components/EventCard.vue'
 import Perelinks from "~~/components/Perelinks.vue";
 import SearchBar from "~~/components/SearchBar.vue";
 import Tiles from "~~/components/Tiles.vue";
+import BurgerMenu from "~~/components/BurgerMenu.vue";
 </script>
 
 <template>
   <div class="layout">
+    <burger-menu></burger-menu>
     <div class="content-wrapper">
       <Header class="header" />
       <main class="container">
@@ -41,15 +43,15 @@ import Tiles from "~~/components/Tiles.vue";
 <style scoped>
 .layout {
   display: flex;
-  flex-wrap: wrap; /* Позволяет перестраивать элементы при адаптации */
-  min-height: 100vh; /* Полная высота экрана */
+  flex-wrap: wrap;
+  min-height: 100vh;
   max-width: 1138px;
   margin: 0 auto;
 }
 
 .header {
-  width: 50%; /* Фиксированные 50% ширины */
-  background-color: #f4f4f4; /* Цвет фона для наглядности, как на praesens.ru */
+  width: 50%;
+  background-color: #f4f4f4;
   padding: 1rem 0;
   box-sizing: border-box;
 }
@@ -65,12 +67,12 @@ import Tiles from "~~/components/Tiles.vue";
 }
 
 .container {
-  width: 50%; /* Убираем ограничение 1138px для адаптации к 50% */
-  padding: 0; /* Убираем лишний padding, чтобы не сжимать контент */
+  width: 50%;
+  padding: 0;
 }
 
 .footer {
-  flex: 0 0 100%; /* Футер занимает всю ширину */
+  flex: 0 0 100%;
   padding: 1rem;
   background-color: #f4f4f4;
   text-align: center;
@@ -96,17 +98,17 @@ import Tiles from "~~/components/Tiles.vue";
 
 @media (max-width: 768px) {
   .layout {
-    flex-direction: column; /* Столбец на мобильных */
+    flex-direction: column;
   }
 
   .header,
   .content-wrapper {
-    flex: 0 0 100%; /* Полная ширина на мобильных */
-    min-height: auto; /* Высота адаптируется под содержимое */
+    flex: 0 0 100%;
+    min-height: auto;
   }
 
   .container {
-    width: 100%; /* Полная ширина на мобильных */
+    width: 100%;
   }
 }
 </style>
