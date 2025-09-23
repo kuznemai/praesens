@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "predeploy": "pnpm run generate",
+    "predeploy": "nuxt generate",
     "deploy": "gh-pages -d .output/public"
   },
   "keywords": [],
