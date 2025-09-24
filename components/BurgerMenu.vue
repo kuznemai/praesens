@@ -110,7 +110,7 @@ const links = [
 }
 
 .nav-links li {
-  margin-bottom: 10px;
+  //margin-bottom: 10px;
   padding: 10px;
 }
 

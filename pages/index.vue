@@ -63,13 +63,9 @@ import BurgerMenu from "~~/components/BurgerMenu.vue";
 .content-wrapper {
   display: flex;
   flex-direction: row;
-
-
   box-sizing: border-box;
   gap: 30px;
-
 }
-
 .container {
   width: 50%;
   padding: 0;
